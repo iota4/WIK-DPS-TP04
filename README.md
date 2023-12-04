@@ -12,3 +12,11 @@ Pour activer un port forwarding entre le port de la machine local et du deployem
 kubectl port-forward deployment.apps/mon-deployment -n my-namespace 8081:8080
 ```
 
+nt : penser à démarrer minikube 
+```
+minikube start 
+```
+et a ajouter le plugin ingress nginx
+```
+minikube addons enable ingress
+```
