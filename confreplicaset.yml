@@ -4,14 +4,14 @@ metadata:
   name: mon-replicaset
   namespace: my-namespace
 spec:
-  replicas: 4  # spécifiez le nombre désiré de réplicas
+  replicas: 4  
   selector:
     matchLabels:
-      app: mon-application  # étiquette pour sélectionner les pods gérés par ce ReplicaSet
+      app: mon-application
   template:
     metadata:
       labels:
-        app: mon-application  # étiquette à appliquer aux pods créés par ce ReplicaSet
+        app: mon-application
     spec:
       containers:
       - name: nginx
