@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: mon-replicaset
+  namespace: my-namespace
+spec:
+  replicas: 4  # spécifiez le nombre désiré de réplicas
+  selector:
+    matchLabels:
+      app: mon-application  # étiquette pour sélectionner les pods gérés par ce ReplicaSet
+  template:
+    metadata:
+      labels:
+        app: mon-application  # étiquette à appliquer aux pods créés par ce ReplicaSet
+    spec:
+      containers:
+      - name: nginx
+        image: registry.cluster.wik.cloud/public/echo
+        ports:
+        - containerPort: 80
+
