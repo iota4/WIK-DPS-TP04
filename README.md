@@ -4,4 +4,3 @@ Pour activer mon fichier yaml de deployement :
 
 ```
 kubectl apply -f confdeployement.yml -f my-namespace
-
