@@ -1,4 +1,4 @@
-Voici les fichiers de configuration d'un deployement de 4 réplicas avec un service nginx
+Voici les fichiers de configuration d'un deployement de 4 réplicas (redondance) avec un service nginx
 
 Pour activer mon fichier yaml de deployement & service nginx : 
 
