@@ -7,7 +7,7 @@ kubectl apply -f confdeployement.yml -f my-namespace
 kubectl apply -f service.yml
 kubectl apply -f ingress.yml
 ```
-Pour activer un port forwarding entre le port de la machine local et du deployement :
+Pour activer un port forwarding entre le port de la machine local et le port du cluster dedeployement :
 ```
 kubectl port-forward deployment.apps/mon-deployment -n my-namespace 8081:8080
 ```
